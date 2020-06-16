@@ -5,13 +5,26 @@ html ,body{
   height:100%;
 }
 .header{
-  background-image: image-url("title.jpeg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: ;
-  background-attachment: fixed;
+  background-image: image-url("title.jpg");
+  background-size: cover;
+  width: 100%;
+  height: auto;
   .site-title{
+  vertical-align: middle;
   text-align: center;
-  justify-content: center;
+  color:#fff;
+  padding: 30px 0;
+  font-size: 50px;
+  letter-spacing: 0.5em;
+  }
+  .category{
+    padding-top: 30px;
+    
+    &>ul{
+      display: flex;
+      justify-content:space-around;
+      list-style: none;
+      color:#fff;
+    }
   }
 }
