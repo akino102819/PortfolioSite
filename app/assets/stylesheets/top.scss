@@ -3,9 +3,10 @@ html ,body{
   padding: 0;
   width: 100vw;
   height:100%;
+  font-family: 'IM Fell DW Pica SC', serif;
 }
 .header{
-  background-image: image-url("title.jpg");
+  background-image: image-url("title2.jpg");
   background-size: cover;
   width: 100%;
   height: auto;
@@ -17,14 +18,49 @@ html ,body{
   font-size: 50px;
   letter-spacing: 0.5em;
   }
+}
   .category{
-    padding-top: 30px;
-    
-    &>ul{
-      display: flex;
-      justify-content:space-around;
+    .tabbox,ul{
       list-style: none;
-      color:#fff;
-    }
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-evenly;
+      .tab{
+        display: inline-block; 
+        border-radius: 1em; 
+        padding:  0.5em;                 
+        color:#fff;     
+        background-color:black;    
+        font-weight: bold;  
+        a{
+          color: #fff;
+          text-decoration: none;
+        }
+        
+      }
+      li input { display: none; }
+      .tab:hover {
+        color: black;               
+        background-color: white;   
+        cursor: pointer; 
+        a{
+          color: black;
+        }
+      }
+      input:checked + .tab {
+        color: rgb(1, 10, 139);
+        background-color: #c0bdbd;
+        position: relative;
+        z-index: 10;
+        a{color: rgb(1, 10, 139);}
+      }
+    } 
   }
+ 
+/* ▼タブの中身 */
+#tabbody div {
+  padding: 1em; 
+  color: black;               
+  background-color: white;
+  height: 70vh;
 }

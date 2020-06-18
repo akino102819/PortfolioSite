@@ -1,14 +1,14 @@
 <header>
-  <div class="header">
-    <div class="site-title">AKINO'S PORTFOLIO</div>
-    <div class="category">
-      <ul>
-        <li>PROFILE</li>
-        <li>WORKS</li>
-        <li>SKILL SET</li>
-        <li>CONTACT</li>
-      </ul>
-  </div>
-
-  </div>
+    <div class="header">
+      <div class="site-title">AKINO'S PORTFOLIO</div>
+      <div class="category">
+        <ul id="tabcontrol">
+          <li><input type="radio" name="tabset" id="tabcheck1" checked><label for="tabcheck1" class="tab"><%= link_to "PROFILE", root_path %></label></li>
+          <li><input type="radio" name="tabset" id="tabcheck2"        ><label for="tabcheck2" class="tab">PORTFOLIO</label></li>
+          <li><input type="radio" name="tabset" id="tabcheck3"        ><label for="tabcheck3" class="tab">SKILL SET</label></li>
+          <li><input type="radio" name="tabset" id="tabcheck4"        ><label for="tabcheck4" class="tab"><%= link_to "CONTACT", contact_path %></label></li>
+        </ul>
+        </div>
+    </div>
+    </div>
 </header>
