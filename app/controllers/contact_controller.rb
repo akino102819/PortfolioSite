@@ -8,7 +8,7 @@ class ContactController < ApplicationController
 
   def confirm
     #入力値のチェック
-    @contact =Contact.new(pasrams[:contact])
+    @contact =Contact.create(params[:contact])
     if @contact.valid?
       # エラーなし　確認画面を表示
       render :action =>'confirm'
