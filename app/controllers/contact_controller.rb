@@ -1,15 +1,15 @@
 class ContactController < ApplicationController
 
-  def index
+  def new
     # 入力画面を表示する
     @contact = Contact.new
-    render :action => 'index'
+    render :action => 'new'
   end
 
-  def confirm
+  def create
     #入力値のチェック
-    @contact =Contact.create(params[:contact])
-    if @contact.valid?
+    @contact =Contact.new(params[:contact])
+    if @contact.save
       # エラーなし　確認画面を表示
       render :action =>'confirm'
     else
@@ -18,12 +18,9 @@ class ContactController < ApplicationController
     end 
   end
 
-  def thanks
-    #　メール送信
-    @contact =Contact.new(params[:contact])
-    ContactMailer.received_email(@contact.deliver)
-    #　完了画面を表示
-    render :action => 'thanks'
-  end
+  private
 
+  def contact_params
+    params.require(:contact).permit(:name, :email, :message)
+  end
 end

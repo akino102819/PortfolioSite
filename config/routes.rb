@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   root 'top#index'
-  get 'contact'=> 'contact#index'
-  post 'contact/confirm' => 'contact#confirm'
-  post 'contact/thanks' => 'contact#thanks'
+  resources :contact, only:[:new, :create]
+  get 'top/skillset' => 'top#skillset'
 end
