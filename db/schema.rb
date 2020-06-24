@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_17_052931) do
+ActiveRecord::Schema.define(version: 2020_06_24_081303) do
 
   create_table "contacts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
@@ -20,4 +20,20 @@ ActiveRecord::Schema.define(version: 2020_06_17_052931) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "images", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "image"
+    t.bigint "portfolio_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["portfolio_id"], name: "index_images_on_portfolio_id"
+  end
+
+  create_table "portfolios", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.text "information"
+    t.text "language"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_foreign_key "images", "portfolios"
 end
