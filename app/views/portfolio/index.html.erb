@@ -1,2 +1,28 @@
-<h1>Portfolio#index</h1>
-<p>Find me in app/views/portfolio/index.html.erb</p>
+<header>
+    <div class="header">
+      <div class="site-title">AKINO'S PORTFOLIO</div>
+      <div class="category">
+        <ul id="tabcontrol">
+          <li><input type="radio" name="tabset" id="tabcheck1"        ><label for="tabcheck1" class="tab"><%= link_to "PROFILE", root_path %></label></li>
+          <li><input type="radio" name="tabset" id="tabcheck2" checked><label for="tabcheck2" class="tab"><%= link_to "PORTFOLIO & SKILL SET", portfolio_index_path %></label></li>
+          <li><input type="radio" name="tabset" id="tabcheck4"        ><label for="tabcheck4" class="tab"><%= link_to "CONTACT", new_contact_path %></label></li>
+        </ul>
+        </div>
+    </div>
+    </div>
+</header>
+<div class="page-header">
+  <div class= "contact">PORTFOLIO</div>
+    <div class="portfolio-list">
+      <% @portfolios.each do |portfolio|%>
+        <div class="portfolio-list_main">
+          <%=image_tag "#{portfolio.image[0].image}"%>
+          <%= portfolio.name%>
+        </div>
+      <%end%>
+    </div>
+
+</div>
+<div class="page-header">
+  <div class= "contact">SKILL SET</div>
+</div>
