@@ -1,3 +1,7 @@
+.portfolio-show{
+  height: 100%;
+  background-color: rgb(252, 252, 248);
+}
 .portfolio-list{
   flex-wrap: wrap;
   display: flex;
@@ -11,7 +15,7 @@
     display: inline-block;
     a{text-decoration: none;
       color: black;
-      display: inline-block;
+      dilay: inline-block;
       
     }
     
@@ -60,6 +64,10 @@
   
 }
 .portfolio_url{
+  .no-deploy{
+    margin: 25px;
+    font-size: 15px;
+  }
   display: flex;
   justify-content: center;
   font-size: 35px;
@@ -75,13 +83,12 @@
   margin: 30px;
   .return{
     display: inline-block; 
-    border-radius: 1em; 
-    padding:  0.5em;                 
+    border-radius: 2.5em; 
+    padding: 1em;                 
     color:#fff;     
     background-color:rgb(14, 192, 216);    
     font-weight: bold;  
     a{
-      
       color: #fff;
       text-decoration: none;
     }
