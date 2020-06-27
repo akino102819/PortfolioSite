@@ -1,2 +1,30 @@
-<h1>Portfolio#show</h1>
-<p>Find me in app/views/portfolio/show.html.erb</p>
+<div class="page-header">
+  <div class= "contact"><%=@portfolio.name%></div>
+</div>
+<div class= "portfolio_img">
+  <% @image.each do |image| %>
+    <%=image_tag "#{image.image}" %>
+  <% end %>
+</div>
+<div class= "portfolio_information">
+  <%= @portfolio.information %>
+</div>  
+
+<div class= "portfolio_language">
+  <div class="title">*使用した言語*</div>
+  <%= @portfolio.language%>
+</div>
+<div class="portfolio_url">
+
+  <%= link_to "#{@portfolio.git_url}", target: :_blank do %>
+    <i class="fab fa-github"></i>
+  <%end%>
+  <%= link_to "#{@portfolio.url}", target: :_blank do %>
+    <i class="fas fa-globe"></i>
+  <%end%>
+</div>
+<div class="btn">
+  <div class="return">
+    <%= link_to "戻る", portfolio_index_path %>
+  </div>
+</div>

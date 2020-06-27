@@ -16,13 +16,20 @@
     <div class="portfolio-list">
       <% @portfolios.each do |portfolio|%>
         <div class="portfolio-list_main">
-          <%=image_tag "#{portfolio.image[0].image}"%>
-          <%= portfolio.name%>
+          <%= link_to portfolio_path(portfolio.id) do %>
+            <%=image_tag "#{portfolio.image[0].image}" %>
+            <div class="portfolio-list_main-name"><%= portfolio.name %></div>
+            <div class="portfolio-list_main-short_statement"><%= portfolio.short_statement %></div>
+          </a>
+          <%end%>
         </div>
       <%end%>
     </div>
-
 </div>
 <div class="page-header">
   <div class= "contact">SKILL SET</div>
+</div>
+<div class= "portfolio_language">
+<div class="title">フロント</div>
+  HTML/CSS　　HAML/SCSS　　Bootstrap　　JavaScript　　　jQuery　　Ruby on Rails　　　Mysql　　heroku　　AWS　　Capistrano　　Nginx
 </div>
