@@ -1,5 +1,5 @@
 <div class="page-header">
-  <div class= "contact"><%=@portfolio.name%></div>
+  <div class= "contact show-title"><%=@portfolio.name%></div>
 </div>
 <div class="portfolio-show">
   <div class= "portfolio_img">
@@ -9,7 +9,7 @@
   </div>
 </div>
 <div class= "portfolio_information">
-  <%= @portfolio.information %>
+  <%= simple_format(@portfolio.information) %>
 </div>  
 <div class= "portfolio_language">
   <div class="title">*使用した言語*</div>
