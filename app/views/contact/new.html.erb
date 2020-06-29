@@ -11,42 +11,18 @@
     </div>
     </div>
 </header>
-<%= form_for @contact, url: contact_index_path do |f| %>
-  <div class="page-header">
-    <div class= "contact">CONTACT</h1>
-  </div>
-
-  <% if @contact.errors.any? %>
-    <div class="alert alert-danger" role="alert">
-      <strong>入力内容にエラーがあります</strong>
-      <ul>
-        <% @contact.errors.each do |attr, msg| %>
-          <li><%= msg %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="table">
-
-    <div class="inquiry">
-      <div class="contact-list">名前(必須)</div>
-      <%= f.text_field :name, class:"name" %>
-    </div>
-
-    <div class="inquiry">
-      <div class="contact-list">メールアドレス(必須)</div>
-      <div><%= f.text_field :email, class:"email" %></div>
-    </div>
-
-    <div class="inquiry">
-      <div class="contact-list">メッセージ</div>
-      <%= f.text_area :message, class:"message" %>
-    </div>
-
-    <div class="inquiry">
-      <%= f.submit '確認', class: 'btn btn-primary' %>
-    </div>
-  </div>
-  
-<% end %>
+<div class="page-header">
+  <div class= "contact">CONTACT</h1>
+</div>
+<div class="contact-message">
+  <p>ご覧いただきありがとうございます。</p>
+  <p>このサイトを通して、私のことを過ごしでも知っていただけたのなら嬉しいです。もし、このサイトや私について、それ以外でも何かコメントがありましたら、メールでご連絡お待ちしております。</p>
+</div>
+<div class="contact-icon">
+  <%= link_to "mailto:ki.akino1028@icloud.com", target: :_blank do %>
+    <i class="far fa-envelope"></i>
+  <%end%>
+  <%= link_to "https://github.com/akino102819", target: :_blank do %>
+    <i class="fab fa-github"></i>
+  <%end%>
+</div>
