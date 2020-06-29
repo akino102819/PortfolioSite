@@ -1,0 +1,42 @@
+<div class="page-header">
+  <div class= "contact show-title">Enparty</div>
+</div>
+<div class="portfolio-show">
+  <div class= "portfolio_img">
+    <%=image_tag "enparty1.png" %>
+    <%=image_tag "enparty2.png" %>
+    <%=image_tag "enparty3.png" %>
+  </div>
+</div>
+<div class= "portfolio_information">
+  <p>＜主な機能＞</p>
+  <p>ユーザーログイン・ログアウト機能</p>
+  <p>アカウント(作成・編集・削除)機能</p>
+  <p class="bottom">マッチしたユーザーを表示してチャットする機能</p>
+  <p>＜作成した経緯＞</p>
+  <p>最近は、結婚相手や彼女を探す際にマッチングアプリを使う時代です。コロナの影響もあり以前より人と会う機会が減って出会いも少なくなっています。それは恋愛だけでなく友達も同じです。</p>
+  <p class="bottom">ならば、友達を探せるマッチングアプリがあるといいのではと考えてこのアプリを作成しました。</p>
+  <p>＜アプリの今後＞</p>
+  <p>マッチしなかった相手とも会話できるようにする</p>
+  <p>チャット画面をもっとわかりやすくする(LINEのように相手と自分のコメントを分ける)</p>
+  <p class="bottom">heroku ではなくAWSでデプロイを行う</p>
+</div>  
+<div class= "portfolio_language">
+  <div class="title">*使用した言語*</div>
+  <p>HTML　　SCSS　　Bootstrap　　JavaScript　　jQuery　　MySQL　　heroku　　GitHub</p>
+</div>
+<div class="portfolio_url">
+  <%= link_to "https://github.com/akino102819/enparty/tree/master", target: :_blank do %>
+    <i class="fab fa-github"></i>
+  <%end%>
+  <%= link_to "https://aqueous-forest-88710.herokuapp.com/", target: :_blank do %>
+    <i class="fas fa-globe"></i>
+  <%end%>
+
+
+</div>
+<div class="btn">
+  <div class="return">
+    <%= link_to "戻る", portfolio_index_path %>
+  </div>
+</div>

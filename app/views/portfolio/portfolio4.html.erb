@@ -1,0 +1,40 @@
+<div class="page-header">
+  <div class= "contact show-title">ToDoDay</div>
+</div>
+<div class="portfolio-show">
+  <div class= "portfolio_img">
+    <%=image_tag "portfolio1.png" %>
+    <%=image_tag "portfolio2.png" %>
+    <%=image_tag "portfolio3.png" %>
+  </div>
+</div>
+<div class= "portfolio_information">
+  <p>＜主な機能＞</p>
+  <p>ユーザーログイン・ログアウト機能</p>
+  <p class="bottom">リスト・カード(作成・編集・削除)機能</p>
+  <p>＜作成した経緯＞</p>
+  <p class="bottom">javascriptの理解が足りていないと感じたのでドラッグ＆ドロップとAjaxで勉強しようと考えたました。また、TrelloというTODOアプリが横スクロールが多くて少し使いづらく感じてこのアプリを作成しました。</p>
+  <p>＜アプリの今後＞</p>
+  <p>リストを跨いでのカードの移動を可能にする</p>
+  <p>他のユーザーともリストを共有できるようにする</p>
+  <p class="bottom">heroku ではなくAWSでデプロイを行う</p>
+</div>  
+<div class= "portfolio_language">
+  <div class="title">*使用した言語*</div>
+  <p>HTML　　SCSS　　Bootstrap　　JavaScript　　jQuery　　　MySQL　　heroku  　GitHub
+</p>
+</div>
+<div class="portfolio_url">
+  <%= link_to "https://github.com/akino102819/PortfolioSite", target: :_blank do %>
+    <i class="fab fa-github"></i>
+  <%end%>
+  <div class="no-deploy">デプロイが完了していません</div>
+
+
+
+</div>
+<div class="btn">
+  <div class="return">
+    <%= link_to "戻る", portfolio_index_path %>
+  </div>
+</div>

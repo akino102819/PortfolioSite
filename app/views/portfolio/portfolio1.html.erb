@@ -1,0 +1,41 @@
+<div class="page-header">
+  <div class= "contact show-title">Mystellar</div>
+</div>
+<div class="portfolio-show">
+  <div class= "portfolio_img">
+    <%=image_tag "mystellar1.png" %>
+    <%=image_tag "mystellar2.png" %>
+    <%=image_tag "mystellar3.png" %>
+  </div>
+</div>
+<div class= "portfolio_information">
+  <p>＜主な機能＞</p>
+  <p>ツイート(投稿・編集・削除)機能</p>
+  <p>ユーザーログイン・ログアウト機能</p>
+  <p>ツイート内でのコメント機能</p>
+  <p class="bottom">ログインなしだと投稿やコメントができない機能</p>
+  <p>＜作成した経緯＞</p>
+  <p>社会人になった時に化粧やファッション、美容に疎くて勉強したくてもどう調べればいいのかわからなくて困っていました。</p>
+  <p class="bottom">このアプリはそういった悩みを解決できるように他の人に相談できるようにするアプリです。　解説や質問ツイートを投稿してコメント機能で他の人からのアドバイスや相談をしてもらい、他の人もコメント欄を見ることで新たに知識を深められるようにこのアプリを作りました。</p>
+  <p>＜アプリの今後＞</p>
+  <p>デプロイが終わっていないのでデプロイを終わらせる</p>
+  <p>投稿を種類別にする</p>
+  <p>お気に入り機能をつける</p>
+  <p class="bottom">投稿のお気に入りの数でランキングを作る</p>
+</div>  
+<div class= "portfolio_language">
+  <div class="title">*使用した言語*</div>
+  <p>HAML　　　SCSS　　Ruby on Rails　　　AWS　　　Capistrano　　　Nginx　　　MySQL　　GitHub</p>
+</div>
+<div class="portfolio_url">
+  <%= link_to "https://github.com/akino102819/mystellar1", target: :_blank do %>
+    <i class="fab fa-github"></i>
+  <%end%>
+  <div class="no-deploy">デプロイが完了していません</div>
+
+</div>
+<div class="btn">
+  <div class="return">
+    <%= link_to "戻る", portfolio_index_path %>
+  </div>
+</div>

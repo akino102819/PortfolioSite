@@ -1,11 +1,12 @@
 class PortfolioController < ApplicationController
   def index
-    @portfolios = Portfolio.includes(:image)
-    
   end
-
-  def show
-    @portfolio = Portfolio.find(params[:id])
-    @image = @portfolio.image
+  def portfolio1
+  end
+  def portfolio2
+  end
+  def portfolio3
+  end
+  def portfolio4
   end
 end

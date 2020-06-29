@@ -14,16 +14,34 @@
 <div class="page-header">
   <div class= "contact">PORTFOLIO</div>
     <div class="portfolio-list">
-      <% @portfolios.each do |portfolio|%>
-        <div class="portfolio-list_main">
-          <%= link_to portfolio_path(portfolio.id) do %>
-            <%=image_tag "#{portfolio.image[0].image}" %>
-            <div class="portfolio-list_main-name"><%= portfolio.name %></div>
-            <div class="portfolio-list_main-short_statement"><%= portfolio.short_statement %></div>
-          </a>
-          <%end%>
-        </div>
-      <%end%>
+      <div class="portfolio-list_main">
+        <%= link_to portfolio_1_path do %>
+          <%=image_tag "mystellar1.png" %>
+          <div class="portfolio-list_main-name">Mystellar</div>
+          <div class="portfolio-list_main-short_statement">ツイートでお悩み解消アプリ</div>
+        <%end%>
+      </div>
+      <div class="portfolio-list_main">
+        <%= link_to portfolio_2_path do %>
+          <%=image_tag "tododay1.png" %>
+          <div class="portfolio-list_main-name">ToDoDay</div>
+          <div class="portfolio-list_main-short_statement">横並びTODOアプリ</div>
+        <%end%>
+      </div>
+      <div class="portfolio-list_main">
+        <%= link_to portfolio_3_path do %>
+          <%=image_tag "enparty1.png" %>
+          <div class="portfolio-list_main-name">Enparty</div>
+          <div class="portfolio-list_main-short_statement">友達マッチングアプリ</div>
+        <%end%>
+      </div>
+      <div class="portfolio-list_main">
+        <%= link_to portfolio_4_path do %>
+          <%=image_tag "portfolio1.png" %>
+          <div class="portfolio-list_main-name">PORTFOLIO</div>
+          <div class="portfolio-list_main-short_statement">現在ご覧いただいているアプリ</div>
+        <%end%>
+      </div>
     </div>
 </div>
 <div class="page-header">
