@@ -50,5 +50,5 @@ test:
 production:
   <<: *default
   database: PortfolioSite_production
-  username: PortfolioSite
-  password: <%= ENV['PORTFOLIOSITE_DATABASE_PASSWORD'] %>
+  username: root
+  password:
