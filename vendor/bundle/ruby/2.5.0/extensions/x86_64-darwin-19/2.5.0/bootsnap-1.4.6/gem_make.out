@@ -1,5 +1,5 @@
 current directory: /Users/kimuraakino/個人アプリ制作/PortfolioSite/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.4.6/ext/bootsnap
-/Users/kimuraakino/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20200705-98454-c7nmnn.rb extconf.rb
+/Users/kimuraakino/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20200705-24104-18giyf.rb extconf.rb
 creating Makefile
 
 current directory: /Users/kimuraakino/個人アプリ制作/PortfolioSite/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.4.6/ext/bootsnap
@@ -12,4 +12,4 @@ linking shared-object bootsnap/bootsnap.bundle
 
 current directory: /Users/kimuraakino/個人アプリ制作/PortfolioSite/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.4.6/ext/bootsnap
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20200705-98454-1xlmkhq/bootsnap
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20200705-24104-1k4bif3/bootsnap

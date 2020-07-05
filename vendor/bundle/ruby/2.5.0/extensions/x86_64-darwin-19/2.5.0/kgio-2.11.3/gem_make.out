@@ -1,5 +1,5 @@
 current directory: /Users/kimuraakino/個人アプリ制作/PortfolioSite/vendor/bundle/ruby/2.5.0/gems/kgio-2.11.3/ext/kgio
-/Users/kimuraakino/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20200705-98454-1bhy91d.rb extconf.rb
+/Users/kimuraakino/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20200705-24104-1u0vvno.rb extconf.rb
 checking for CLOCK_MONOTONIC in time.h... yes
 checking for clockid_t in time.h... yes
 checking for clock_gettime() in -lrt... no
@@ -65,4 +65,4 @@ linking shared-object kgio_ext.bundle
 
 current directory: /Users/kimuraakino/個人アプリ制作/PortfolioSite/vendor/bundle/ruby/2.5.0/gems/kgio-2.11.3/ext/kgio
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 kgio_ext.bundle ./.gem.20200705-98454-1cnn5kr
+/usr/bin/install -c -m 0755 kgio_ext.bundle ./.gem.20200705-24104-1n4ozh

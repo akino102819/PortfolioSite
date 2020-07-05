@@ -1,5 +1,5 @@
 current directory: /Users/kimuraakino/個人アプリ制作/PortfolioSite/vendor/bundle/ruby/2.5.0/gems/sassc-2.4.0/ext
-/Users/kimuraakino/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20200705-98454-tnewdx.rb extconf.rb
+/Users/kimuraakino/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20200705-24104-lgfh3i.rb extconf.rb
 creating Makefile
 
 current directory: /Users/kimuraakino/個人アプリ制作/PortfolioSite/vendor/bundle/ruby/2.5.0/gems/sassc-2.4.0/ext
@@ -77,4 +77,4 @@ linking shared-object sassc/libsass.bundle
 
 current directory: /Users/kimuraakino/個人アプリ制作/PortfolioSite/vendor/bundle/ruby/2.5.0/gems/sassc-2.4.0/ext
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 libsass.bundle ./.gem.20200705-98454-onwzeg/sassc
+/usr/bin/install -c -m 0755 libsass.bundle ./.gem.20200705-24104-17vapus/sassc
