@@ -62,6 +62,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'pry-rails'
 gem 'font-awesome-sass'
+gem 'rails-i18n'
 group :development, :test do
   gem 'capistrano'
   gem 'capistrano-bundler'
