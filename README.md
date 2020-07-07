@@ -22,3 +22,4 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+Installs shims for all Ruby executables known to rbenv (i.e., ~/.rbenv/versions//bin/). Run this command after you install a new version of Ruby, or install a gem that provides commands.

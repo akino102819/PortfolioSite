@@ -51,4 +51,8 @@ production:
   <<: *default
   database: PortfolioSite_production
   username: root
+<<<<<<< HEAD
   password: 
+=======
+  password:
+>>>>>>> b8fc891b486d893f828632144ad496f35b5cda27
