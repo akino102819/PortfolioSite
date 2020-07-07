@@ -41,12 +41,15 @@ set :keep_releases, 5
 # Uncomment the following to require manually verifying the host key before first deploy.
 # set :ssh_options, verify_host_key: :secure
 set :rbenv_ruby, '2.5.1'
+
 set :log_level, :debug
+
 namespace :deploy do
   desc 'Restart application'
   task :restart do
     invoke 'unicorn:restart'
   end
+
   desc 'Create database'
   task :db_create do
     on roles(:db) do |host|
@@ -57,6 +60,7 @@ namespace :deploy do
       end
     end
   end
+  
   desc 'Run seed'
   task :seed do
     on roles(:app) do

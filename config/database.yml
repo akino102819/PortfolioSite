@@ -55,4 +55,8 @@ production:
   password: 
 =======
   password:
+<<<<<<< HEAD
 >>>>>>> b8fc891b486d893f828632144ad496f35b5cda27
+=======
+  socket: /var/lib/mysql/mysql.sock
+>>>>>>> b6f7a13f9e5c24910c7025b66db54e378b1064f6
