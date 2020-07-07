@@ -52,3 +52,4 @@ production:
   database: PortfolioSite_production
   username: root
   password:
+  socket: /var/lib/mysql/mysql.sock
