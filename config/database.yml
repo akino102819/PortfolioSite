@@ -51,7 +51,17 @@ production:
   <<: *default
   database: PortfolioSite_production
   username: root
+<<<<<<< HEAD
+  password: 
+=======
   password:
+<<<<<<< HEAD
+>>>>>>> b8fc891b486d893f828632144ad496f35b5cda27
+=======
   socket: /var/lib/mysql/mysql.sock
+<<<<<<< HEAD
+>>>>>>> b6f7a13f9e5c24910c7025b66db54e378b1064f6
+=======
 
   
+>>>>>>> 88487685918933b4adbe993c47a3507e9e9cd8ee

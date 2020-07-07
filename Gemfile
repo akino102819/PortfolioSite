@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.5.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.3'
+gem 'rails', '~>5.2.3'
 # Use mysql as the database for Active Record
 gem 'mysql2', '~>0.5.3'
 # Use Puma as the app server
@@ -62,6 +62,13 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'pry-rails'
 gem 'font-awesome-sass'
+<<<<<<< HEAD
+
+group :production, :staging do
+  gem 'unicorn'
+end
+gem 'mysql2', '~>0.5.3'
+=======
 gem 'rails-i18n'
 group :development, :test do
   gem 'capistrano'
@@ -73,3 +80,4 @@ gem 'therubyracer'
 group :production, :staging do
   gem 'unicorn'
 end
+>>>>>>> b8fc891b486d893f828632144ad496f35b5cda27
