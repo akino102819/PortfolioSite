@@ -63,9 +63,13 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'pry-rails'
 gem 'font-awesome-sass'
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> b93200ed412cc132336ea309c2eb38712c62d82b
+=======
+
+>>>>>>> b8a951a273954bf6559151451ac5a61eae653f83
 group :production, :staging do
   gem 'unicorn'
 end
