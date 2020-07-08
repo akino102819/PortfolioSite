@@ -37,7 +37,11 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'byebug', platform: :mri
+  gem 'capistrano'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv'
 end
 
 group :development do
@@ -62,25 +66,12 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'pry-rails'
 gem 'font-awesome-sass'
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> b93200ed412cc132336ea309c2eb38712c62d82b
-=======
-
->>>>>>> b8a951a273954bf6559151451ac5a61eae653f83
 group :production, :staging do
   gem 'unicorn'
 end
 gem 'mysql2', '~>0.5.3'
 gem 'rails-i18n'
-group :development, :test do
-  gem 'capistrano'
-  gem 'capistrano-bundler'
-  gem 'capistrano-rails'
-  gem 'capistrano-rbenv'
-end
 gem 'therubyracer'
 group :production, :staging do
   gem 'unicorn'
