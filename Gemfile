@@ -72,10 +72,7 @@ group :production, :staging do
 end
 gem 'mysql2', '~>0.5.3'
 gem 'rails-i18n'
-<<<<<<< HEAD
-=======
 
->>>>>>> 455675ddd1f6090781d82ce9623924399fcc2a1e
 gem 'therubyracer'
 group :production, :staging do
   gem 'unicorn'
