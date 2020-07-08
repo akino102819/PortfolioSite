@@ -62,13 +62,11 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'pry-rails'
 gem 'font-awesome-sass'
-<<<<<<< HEAD
 
 group :production, :staging do
   gem 'unicorn'
 end
 gem 'mysql2', '~>0.5.3'
-=======
 gem 'rails-i18n'
 group :development, :test do
   gem 'capistrano'
@@ -80,4 +78,3 @@ gem 'therubyracer'
 group :production, :staging do
   gem 'unicorn'
 end
->>>>>>> b8fc891b486d893f828632144ad496f35b5cda27
