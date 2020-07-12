@@ -67,9 +67,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'pry-rails'
 gem 'font-awesome-sass'
 
-group :production, :staging do
-  gem 'unicorn'
-end
 gem 'mysql2', '~>0.5.3'
 gem 'rails-i18n'
 
